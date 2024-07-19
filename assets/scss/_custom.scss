@@ -1,0 +1,338 @@
+//GENERALES
+
+body{
+    color:$dark;
+    background-color: $light;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+a{
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+}
+
+//FUENTES
+
+.font-lead{
+  font-size: $h6-font-size;
+}
+
+//BOTONES
+
+.btn{
+  border-radius: $border-radius-pill;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+}
+
+.btn-flecha{
+  background-color: $secondary;
+  color:$white;
+  padding:16px 24px;
+  &::after{
+      content:'\F138';
+      font-family: 'Bootstrap-icons';
+      margin-left: 1rem;
+  }
+  &:hover{
+      background-color:$red-600;
+      color:$white;
+  }
+}
+
+.volume-btn {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  line-height: 68px;
+  display: inline-block;
+  text-align: center;
+  background: $secondary;
+  position: relative;
+    &::before{
+      content:'\F611';
+      font-family: 'Bootstrap-icons';
+      font-size: 2rem;
+      font-weight: $font-weight-normal;
+    }
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 50%;
+      animation: ripple 2s infinite ease-in-out;
+      z-index: -1;
+      background: $secondary;
+      animation-delay: 0.5s;
+    }
+    
+    @keyframes ripple {
+      0% {
+          transform: scale(1);
+          opacity: 1;
+      }
+    
+      100% {
+          transform: scale(1.5);
+          opacity: 0;
+      }
+    }
+}
+
+//SECCIONES
+
+#navbar-principal{
+  transition: all 0.2s ease-in-out;
+  #logo{
+    transition: all 0.2s ease-in-out;
+  }
+  ul{
+    gap:$spacer;
+    .nav-link{
+      padding: 0;
+      color:$dark;
+      &:hover{
+        color:$primary;
+      }
+    }
+  }
+  .btn{
+    font-size: 15px;
+    padding:8px 12px;
+  }
+  .btn-tienda{
+    border:2px solid $dark;
+    display: flex;
+    background-color: $white;
+    gap: 8px;
+    margin-left:8px;
+    &::before{
+      content:'\F242';
+      font-family: 'Bootstrap-icons';
+    }
+  }
+  .btn-buscar{
+    color:$dark;
+  }
+  .navbar-toggler {
+    aspect-ratio: 1/1;
+    line-height: 0;
+    padding: .88rem;
+  }
+}
+
+#cta, #bloque-servicios{
+  .row{
+    row-gap:56px;
+    .card{
+      display:flex;
+      color:inherit;
+      border:none;
+      height:100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding:48px 24px;
+      background-color: $white;
+      border-radius: 32px;
+      gap:1rem;
+      transition: all 0.2s ease-in;
+      img{
+        margin-bottom: 1rem;
+      }
+      .card-text{
+        font-weight: $font-weight-normal;
+      }
+      &:hover{
+        transform: scale(1.05);
+        -webkit-box-shadow: 2px 2px 0px 2px $dark;
+        -moz-box-shadow: 2px 2px 0px 2px $dark;
+        box-shadow: 2px 2px 0px 2px $dark;
+      }
+    }
+  }
+}
+
+#noticias, #proyectos{
+  margin:auto 0;
+  padding:80px 0;
+
+  .cards{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    .card{
+      border-radius: 32px;
+      border:0;
+      min-width: 450px;
+      margin-right:2rem;
+      .categoria, .ubicacion{
+        display:block;
+        color:$primary;
+        font-weight: $font-weight-bold;
+        &:hover{
+          color:$secondary;
+        }
+      }
+      .ubicacion::before{
+        content:'\F3E8';
+        font-family: 'Bootstrap-icons';
+        margin-right: 8px;
+      }
+    }
+  }
+  .center .slick-slide{
+    height: 100%;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7);
+    transition: all 0.4s ease-in-out;
+  }
+  .center .slick-slide,
+  .center .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+    transform: scale(0.7, 0.7);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .center .slick-center,
+  .center .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+    transform: scale(1);
+  }
+  .center .slick-current.slick-active{
+    transform: scale(1);
+  }
+}
+
+
+
+#productos{
+  .card{
+    height:100%;
+    .card-img-top{
+      height:297px ;
+      max-height: 297px;
+    }
+  }
+}
+
+#logotipos{
+  .logotipo{
+    height:133px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.01s ease-in;
+    &:hover{
+      filter: brightness(2.5);
+    }
+  }
+}
+
+footer{
+  a{
+    color:$white;
+
+  }
+ .redes-sociales{
+  gap:24px;
+ }
+  .campo{
+    padding:8px 8px 8px 24px;
+  }
+ .btn-suscribirse{
+  background-color: $blue-800;
+  color:$white;
+  padding:16px 24px;
+ }
+ .form{
+  background-color: $blue-700;
+ }
+}
+
+//CONTENEDORES
+
+.fondo-azul{
+  background-color: $primary;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.container-left {
+    padding-left:.75rem
+}
+
+.container-left .row {
+    margin-right:0
+}
+
+.img-cover{
+  object-fit: cover;
+}
+
+.bg-transparente{
+  background-color: transparent;
+}
+
+.bg-change{
+  background-color:$blue-100;
+  -webkit-box-shadow: 0px 10px 27px -7px rgba(4,30,73,1);
+  -moz-box-shadow: 0px 10px 27px -7px rgba(4,30,73,1);
+  box-shadow: 0px 10px 27px -7px rgba(4,30,73,1);
+}
+
+//MEDIAS
+
+@media (min-width:576px) {
+    .container-left {
+      margin-left:max(calc(50vw - 270px),0px);
+    }
+}
+
+@media (min-width:768px) {
+    .container-left {
+      margin-left:max(calc(50vw - 360px),0px);
+    }
+  }
+
+@media (min-width:992px) {
+    .container-left {
+      margin-left:max(calc(50vw - 480px),0px);
+    }
+    .ilustracion-1{
+      position: absolute;
+      right: 4rem;
+      top:-3rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .container-left {
+      margin-left:max(calc(50vw - 570px),0px);
+    }
+}
+
+@media (min-width:1400px) {
+    .container-left {
+      margin-left:max(calc(50vw - 660px),0px);
+    }
+}
+  
+@media (min-width:1200px) {
+    .container-xl-left {
+      margin-left:max(calc(50vw - 570px),0px);
+      padding-left:.75rem
+    }
+}
+@media (min-width:1400px) {
+    .container-xl-left {
+      margin-left:max(calc(50vw - 660px),0px);
+    }
+}
