@@ -7,7 +7,7 @@
 **Recursos:** [Typescale](https://typescale.com/), [Favicongenerator](https://realfavicongenerator.net/)
 **IDE:** Visual Studio Code
 
-### **HeadingDocumentación**
+### Documentación**
 
  - Buscar y estudiar la información sobre la empresa (su identidad, los
    servicios que ofrece etc).
