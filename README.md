@@ -13,10 +13,14 @@
    servicios que ofrece etc).
  - Inspección del sitio web actual https://puntodis.com/.
  - Comparación con el prototipo del nuevo diseño en figma que se nos proporcionó.
--- Contenido
---  Estructura
--- Estilos
--- Recursos (imágenes, librerias…)
+   
+     Contenido
+   
+     Estructura
+   
+     Estilos
+
+     Recursos (imágenes, librerias…)
 
 ### **Inicio del proyecto**
 
@@ -24,8 +28,8 @@
 Index.html y carpeta de recursos (imágenes, javascript, scss).
 - Crear el entorno de trabajo para poder trabajar con scss e instalar bootstrap.
 (En local instalé bootstrap via npm, en github hice un @import de “https://github.com/twbs/bootstrap/blob/16d80a4ff7b42da57215783cc8ff85d6f0627630/scss/bootstrap.scss”)
--- Watch scss
--- Live server
+Watch scss
+Live server
 
 - Establecer la estructura para importar los archivos scss para compilarlos en la hoja de estilos.
 - Crear la estructura básica del documento html: head y body.
@@ -49,10 +53,12 @@ Index.html y carpeta de recursos (imágenes, javascript, scss).
 
 - Vincular o importar los recursos que se van a necesitar.
 - Ejemplos:
--- Las fuentes las importé en el archivo scss que compila la hoja de estilos css.
--- Los scripts al final del body vía cdn de jquery, slick slider y aos.
+  
+  Las fuentes las importé en el archivo scss que compila la hoja de estilos css.
+  
+  Los scripts al final del body vía cdn de jquery, slick slider y aos.
 
- - Exportar las imágenes necesarias desde figma y optimizarlas con Photoshop e Illustrator.
+- Exportar las imágenes necesarias desde figma y optimizarlas con Photoshop e Illustrator.
 - Añadir imágenes e iconos. Las imágenes las puse directamente como contenido en el html y los iconos los inyecté vía css utilizando los pseudoelementos ::before y ::after.
 
 ### **Estilos**
@@ -60,12 +66,18 @@ Index.html y carpeta de recursos (imágenes, javascript, scss).
 - Estilos generales: color del fondo, del contenido y la fuente de body.
 - Estilos de elementos sencillos que se repiten.
 - Ejemplos:
--- Botón de contactar
--- Estilo de las anclas
-- Estilos de estructuras que se repiten.
+- 
+  Botón de contactar
+
+  Estilo de las anclas
+
+  Estilos de estructuras que se repiten.
+
 - Ejemplos:
--- CTA y Bloque de servicios
--- Noticias y proyectos
+
+  CTA y Bloque de servicios
+
+  Noticias y proyectos
 
 - Dar estilos a las secciones utilizando las clases de bootstrap  en el html y creando mis propias clases en mi archivo “_custom.scss”.
 - Para ayudarme tuve en cuenta cómo estaban estructuradas otras páginas de Bikuma.
