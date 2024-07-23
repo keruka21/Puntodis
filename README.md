@@ -48,7 +48,7 @@ Index.html y carpeta de recursos (imágenes, javascript, scss).
 ### **Recursos**
 
 - Vincular o importar los recursos que se van a necesitar.
-Ejemplos:
+- Ejemplos:
 -- Las fuentes las importé en el archivo scss que compila la hoja de estilos css.
 -- Los scripts al final del body vía cdn de jquery, slick slider y aos.
 
@@ -59,13 +59,13 @@ Ejemplos:
 
 - Estilos generales: color del fondo, del contenido y la fuente de body.
 - Estilos de elementos sencillos que se repiten.
-Ejemplos:
+- Ejemplos:
 -- Botón de contactar
 -- Estilo de las anclas
 - Estilos de estructuras que se repiten.
-Ejemplos:
+- Ejemplos:
 -- CTA y Bloque de servicios
---Noticias y proyectos
+-- Noticias y proyectos
 
 - Dar estilos a las secciones utilizando las clases de bootstrap  en el html y creando mis propias clases en mi archivo “_custom.scss”.
 - Para ayudarme tuve en cuenta cómo estaban estructuradas otras páginas de Bikuma.
