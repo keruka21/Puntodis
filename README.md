@@ -23,9 +23,11 @@
 - Crear la carpeta raíz con la estructura básica del proyecto:
 Index.html y carpeta de recursos (imágenes, javascript, scss).
 -Crear el entorno de trabajo para poder trabajar con scss e instalar bootstrap.
-(En local instalé bootstrap via npm, en github hice un @import de “https://github.com/twbs/bootstrap/blob/16d80a4ff7b42da57215783cc8ff85d6f0627630/scss/bootstrap.scss”) 
+(En local instalé bootstrap via npm, en github hice un @import de “https://github.com/twbs/bootstrap/blob/16d80a4ff7b42da57215783cc8ff85d6f0627630/scss/bootstrap.scss”)
+
 -- Watch scss
 -- Live server
+
 - Establecer la estructura para importar los archivos scss para compilarlos en la hoja de estilos.
 - Crear la estructura básica del documento html: head y body.
 - Vincular la hoja de estilos css en el head del html una vez comprobado que se compilan adecuadamente todos los archivos scss.
