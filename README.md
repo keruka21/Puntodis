@@ -22,11 +22,9 @@
 
 - Crear la carpeta raíz con la estructura básica del proyecto:
 Index.html y carpeta de recursos (imágenes, javascript, scss).
--Crear el entorno de trabajo para poder trabajar con scss e instalar bootstrap.
+- Crear el entorno de trabajo para poder trabajar con scss e instalar bootstrap.
 (En local instalé bootstrap via npm, en github hice un @import de “https://github.com/twbs/bootstrap/blob/16d80a4ff7b42da57215783cc8ff85d6f0627630/scss/bootstrap.scss”)
-
 -- Watch scss
-
 -- Live server
 
 - Establecer la estructura para importar los archivos scss para compilarlos en la hoja de estilos.
@@ -69,8 +67,8 @@ Ejemplos:
 -- CTA y Bloque de servicios
 --Noticias y proyectos
 
--Dar estilos a las secciones utilizando las clases de bootstrap  en el html y creando mis propias clases en mi archivo “_custom.scss”.
--Para ayudarme tuve en cuenta cómo estaban estructuradas otras páginas de Bikuma.
+- Dar estilos a las secciones utilizando las clases de bootstrap  en el html y creando mis propias clases en mi archivo “_custom.scss”.
+- Para ayudarme tuve en cuenta cómo estaban estructuradas otras páginas de Bikuma.
 
 ### **Scripts**
 
