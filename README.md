@@ -26,6 +26,7 @@ Index.html y carpeta de recursos (imágenes, javascript, scss).
 (En local instalé bootstrap via npm, en github hice un @import de “https://github.com/twbs/bootstrap/blob/16d80a4ff7b42da57215783cc8ff85d6f0627630/scss/bootstrap.scss”)
 
 -- Watch scss
+
 -- Live server
 
 - Establecer la estructura para importar los archivos scss para compilarlos en la hoja de estilos.
